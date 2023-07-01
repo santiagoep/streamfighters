@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const RingReady = () => (
   <section className="px-4 md:p-0 flex flex-col-reverse md:grid md:grid-cols-2 items-center justify-center w-full">
-    <div className="md:bg-[#fff] flex items-center justify-end px-10 lg:px-40 pb-10 md:py-20 h-[calc(100vh/1.7)]">
+    <div className="md:bg-[#fff] w-full flex flex-col items-center justify-center px-10 lg:px-40 py-10 md:py-20 h-[calc(100vh/1.7)]">
       <video
         controls
         muted
