@@ -1,31 +1,8 @@
 import Image from "next/image";
 
 const Footer = () => (
-  <footer>
-    <div className="bg-bgPrimary text-textPrimary py-10 flex flex-col lg:flex-row justify-between items-center px-2 md:px-20">
-      <div className="aspect-[20252/12023] h-[100px] relative">
-        <Image
-          src="/logos/stream-fighters.png"
-          alt="Stream Fighters logo"
-          fill
-        />
-      </div>
-      <div className="flex gap-10 mt-10 lg:mt-0">
-        <div className="h-[18px] md:h-[30px] aspect-[603/200] relative">
-          <Image src="/sponsors/kick.png" alt="Kick" fill />
-        </div>
-        <div className="h-[18px] md:h-[30px] aspect-[1007/500] relative">
-          <Image src="/sponsors/stake.png" alt="Stake" fill />
-        </div>
-        <div className="h-[18px] md:h-[30px] aspect-[109/100] relative">
-          <Image src="/sponsors/westcol.png" alt="Westcol" fill />
-        </div>
-        <div className="h-[18px] md:h-[30px] aspect-[793/250] relative">
-          <Image src="/sponsors/spoon.webp" alt="Spoon" fill />
-        </div>
-      </div>
-    </div>
-    <div className="w-full bg-[#000] flex justify-center items-center gap-7 py-5">
+  <footer className="bg-bgPrimary text-textPrimary">
+    <div className="w-full py-5 flex justify-center items-center gap-7">
       <a
         href="https://www.instagram.com/stream_fighters/"
         target="_blank"
@@ -58,6 +35,42 @@ const Footer = () => (
       >
         <Image src="/social/youtube.svg" alt="Youtube" fill />
       </a>
+    </div>
+    <div className="py-10 flex flex-col lg:flex-row justify-between items-center px-2 md:px-20">
+      <div className="aspect-[20252/12023] h-[100px] relative">
+        <Image
+          src="/logos/stream-fighters.png"
+          alt="Stream Fighters logo"
+          fill
+        />
+      </div>
+      <div className="flex gap-10 mt-10 lg:mt-0">
+        <div className="h-[18px] md:h-[30px] aspect-[603/200] relative">
+          <Image src="/sponsors/kick.png" alt="Kick" fill />
+        </div>
+        <div className="h-[18px] md:h-[30px] aspect-[1007/500] relative">
+          <Image src="/sponsors/stake.png" alt="Stake" fill />
+        </div>
+        <div className="h-[18px] md:h-[30px] aspect-[109/100] relative">
+          <Image src="/sponsors/westcol.png" alt="Westcol" fill />
+        </div>
+        <div className="h-[18px] md:h-[30px] aspect-[793/250] relative">
+          <Image src="/sponsors/spoon.webp" alt="Spoon" fill />
+        </div>
+      </div>
+    </div>
+    <div className="w-full bg-[#000] py-2 flex justify-center items-center">
+      <p className="font-light">
+        Desarrollado por:{" "}
+        <a
+          href="https://www.instagram.com/sanep01/"
+          rel="noopener nofollow noreferrer"
+          target="_blank"
+          className="font-bold underline text-kick"
+        >
+          @sanep01
+        </a>
+      </p>
     </div>
   </footer>
 );
